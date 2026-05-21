@@ -9,8 +9,11 @@ namespace server.Services
 
         public MongoDBService()
         {
+            var connectionString =
+                Environment.GetEnvironmentVariable("MONGO_URI");
+
             var client =
-                new MongoClient("mongodb://localhost:27017");
+                new MongoClient(connectionString);
 
             var database =
                 client.GetDatabase("FurnitureDB");
