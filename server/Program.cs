@@ -10,7 +10,10 @@ builder.Services.AddCors(options =>
     options.AddPolicy("MyPolicy",
         policy =>
         {
-            policy.WithOrigins("http://localhost:5173")
+            policy.WithOrigins(
+                    "http://localhost:5173",
+                    "https://mahima-art-export.vercel.app"
+                )
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
