@@ -2,6 +2,11 @@ import { useState } from "react"
 
 function ContactSection() {
 
+  const API_URL = 
+    window.location.hostname === "localhost"
+      ? "https://localhost:7139/api/contact"
+      : "https://mahima-art-export.onrender.com/api/contact";
+
   const [formData, setFormdata] = useState({
     name : "",
     email : "",
@@ -30,7 +35,7 @@ function ContactSection() {
     }
 
     try{
-      const response = await fetch("https://localhost:7139/api/contact",{
+      const response = await fetch(API_URL,{
         method: "POST",
         headers: {
           "Content-Type": "application/json",
