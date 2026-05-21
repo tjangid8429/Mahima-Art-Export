@@ -39,3 +39,4 @@ D:\Full Stack\BusinessWebsite\server\obj\Debug\net8.0\refint\server.dll
 D:\Full Stack\BusinessWebsite\server\obj\Debug\net8.0\server.pdb
 D:\Full Stack\BusinessWebsite\server\obj\Debug\net8.0\server.genruntimeconfig.cache
 D:\Full Stack\BusinessWebsite\server\obj\Debug\net8.0\ref\server.dll
+D:\Full Stack\BusinessWebsite\server\obj\Debug\net8.0\server.sourcelink.json
